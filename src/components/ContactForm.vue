@@ -70,7 +70,7 @@ export default {
             // Props are supposed to be immutable, therefore create
             // a local variable contactLocal and bind it to the form
             contactLocal: {
-                ...this.contact, favorite: !!this.contact.favorite
+                ...this.contact, favorite: !!this.contact?.favorite
 
             },
             contactFormSchema,
